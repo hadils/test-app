@@ -1,3 +1,4 @@
+import React from "react";
 import {StatusBar} from 'expo-status-bar';
 import {StyleSheet, Text, View} from 'react-native';
 import {NativeBaseProvider, Button, VStack} from "native-base";
@@ -35,9 +36,10 @@ export default function App() {
 
     return (
         <NativeBaseProvider>
-            <SafeAreaView>
+            <SafeAreaView style={{flex: 1}}>
                 <VStack
                     w={'100%'}
+                    h={'100%'}
                     space={4}
                     px={'2'}
                     mt={'4'}
